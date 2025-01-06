@@ -1,17 +1,7 @@
 # Home
 
-This site contains the documentation on how to build documentation sites
+This site contains the documentation for our AWS cloud environment
 
-## Commands
+## Logging In
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
-
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+You can access the AWS console by starting from [CDCR launch page](https://cdcr.awsapps.com/start#/). You must have a role tied to the account you're logging in with. The role groups used with AWS are located in Active Directory in the accounts.cdcr.ca.gov\CDCR\Apps\AWS organizational unit.

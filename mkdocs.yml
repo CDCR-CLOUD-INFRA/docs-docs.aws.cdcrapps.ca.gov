@@ -1,5 +1,5 @@
 site_name: CDCR EIS AWS Documentation
-site_url: https://template.docs.aws.cdcr.ca.gov/
+site_url: https://awsdocs.cdcr.ca.gov/
 theme:
   name: material
   language: en
@@ -42,11 +42,16 @@ extra:
   generator: false
 extra_css:
   - site_assets/extra.css
+extra_javascript:
+  - https://unpkg.com/mermaid@11.4.0/dist/mermaid.min.js
 markdown_extensions:
+  - admonition
   - attr_list
   - md_in_html
   - def_list
   - tables
+  - pymdownx.critic
+  - pymdownx.details
   - toc:
       anchorlink: true
   - pymdownx.superfences:
