@@ -1,0 +1,56 @@
+site_name: CDCR EIS AWS Documentation
+site_url: https://template.docs.aws.cdcr.ca.gov/
+theme:
+  name: material
+  language: en
+  logo: site_assets/logo.png
+  favicon: site_assets/favicon.ico
+  features:
+    - navigation.instant
+    #- navigation.instant.prefetch
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    #- navigation.sections
+    #- navigation.expand
+    #- navigation.path
+    - navigation.indexes
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - search.share
+    - navigation.top
+plugins:
+  - search
+  - glightbox:
+      touchNavigation: true
+      loop: false
+      effect: zoom
+      slide_effect: slide
+      width: 100%
+      height: auto
+      zoomable: true
+      draggable: true
+      skip_classes:
+        - custom-skip-class-name
+      auto_caption: false
+      caption_position: bottom
+      background: white
+      shadow: true
+      manual: false
+extra:
+  generator: false
+extra_css:
+  - site_assets/extra.css
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - def_list
+  - tables
+  - toc:
+      anchorlink: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
